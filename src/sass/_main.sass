@@ -1,0 +1,94 @@
+.main
+	position: relative
+	background: #373737 url('../img/main/bgi-main.jpg') center  no-repeat 
+	background-size: cover
+	padding-top: 65px
+	padding-bottom: 60px
+	color: $white
+	z-index: 2
+	&::before 
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
+		z-index: 0
+		background-color: rgba(0, 0, 0, 0.65)
+	&-text
+		&_title
+			font-family: 'Roboto-Bold'
+			font-size: 41px
+			line-height: 42px	
+			margin-bottom: 9px
+		&_subtitle
+			margin-bottom: 20px
+			font-family: 'Roboto-Regular'
+			font-size: 28px
+			
+	&-img
+		float: right
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			left: 20%
+			top: %
+			width: 390px
+			height: 390px
+			border: 1px solid $white
+			border-radius: 50%
+		&::after
+			content: url(../img/main/rst.png)
+			position: absolute
+			z-index: 4
+			bottom: -1%
+			left: 21%
+	
+	&-form
+		padding: 22px 26px 23px 28px
+		background-color: rgba(255, 255, 255, 0.2)
+		border-radius: 3px
+		/* Сноска */
+		.text_footnote
+			padding-left: 18px
+			padding-top: 6px
+			font-family: 'Roboto-Light'
+			font-size: 14px
+			line-height: 30px
+
+		.form-style
+			display: flex
+			/* Placeholder */
+			.input-style
+				padding-left: 18px
+				margin-right: 10px
+				width: 311px
+				height: 56px
+		.text
+			
+			font-size: 20px
+			line-height: 30px
+			&_title
+				font-family: 'Roboto-Light'
+			&_subtitle
+				font-family: 'Roboto-Bold'
+				text-transform: uppercase
+				margin-bottom: 15px
+			&_footnote
+				font-size: 14px
+				font-weight: 300
+				line-height: 30px
+		.button
+			width: 161px
+			height: 56px
+			font-family: 'Roboto-Medium'
+			font-size: 15px
+			line-height: 22px
+
+
+
+
+

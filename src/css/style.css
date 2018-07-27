@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/RobotoBlack/RobotoBlack.eot");
+  src: url("../fonts/RobotoBlack/RobotoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBlack/RobotoBlack.otf") format("opentype"), url("../fonts/RobotoBlack/RobotoBlack.svg") format("svg"), url("../fonts/RobotoBlack/RobotoBlack.ttf") format("truetype"), url("../fonts/RobotoBlack/RobotoBlack.woff") format("woff"), url("../fonts/RobotoBlack/RobotoBlack.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.otf") format("opentype"), url("../fonts/RobotoBold/RobotoBold.svg") format("svg"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.otf") format("opentype"), url("../fonts/RobotoLight/RobotoLight.svg") format("svg"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.otf") format("opentype"), url("../fonts/RobotoMedium/RobotoMedium.svg") format("svg"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.otf") format("opentype"), url("../fonts/RobotoRegular/RobotoRegular.svg") format("svg"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  margin: 0; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 968px; } }
+
+.header {
+  padding-bottom: 11px;
+  padding-top: 59px; }
+  .header .button {
+    margin-left: 10px; }
+  .header_phone {
+    color: #373737;
+    font-family: 'Roboto-Medium';
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+    min-height: 29px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .header_phone-link {
+      color: #373737;
+      text-decoration: none; }
+
+.phone-line {
+  border-left: solid 1px #cfcfd0; }
+
+.main {
+  position: relative;
+  background: #373737 url("../img/main/bgi-main.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  color: #ffffff;
+  z-index: 2; }
+  .main::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.65); }
+  .main-text_title {
+    font-family: 'Roboto-Bold';
+    font-size: 41px;
+    line-height: 42px;
+    margin-bottom: 9px; }
+  .main-text_subtitle {
+    margin-bottom: 20px;
+    font-family: 'Roboto-Regular';
+    font-size: 28px; }
+  .main-img {
+    float: right;
+    position: relative; }
+    .main-img::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 20%;
+      top: %;
+      width: 390px;
+      height: 390px;
+      border: 1px solid #ffffff;
+      border-radius: 50%; }
+    .main-img::after {
+      content: url(../img/main/rst.png);
+      position: absolute;
+      z-index: 4;
+      bottom: -1%;
+      left: 21%; }
+  .main-form {
+    padding: 22px 26px 23px 28px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    /* Сноска */ }
+    .main-form .text_footnote {
+      padding-left: 18px;
+      padding-top: 6px;
+      font-family: 'Roboto-Light';
+      font-size: 14px;
+      line-height: 30px; }
+    .main-form .form-style {
+      display: flex;
+      /* Placeholder */ }
+      .main-form .form-style .input-style {
+        padding-left: 18px;
+        margin-right: 10px;
+        width: 311px;
+        height: 56px; }
+    .main-form .text {
+      font-size: 20px;
+      line-height: 30px; }
+      .main-form .text_title {
+        font-family: 'Roboto-Light'; }
+      .main-form .text_subtitle {
+        font-family: 'Roboto-Bold';
+        text-transform: uppercase;
+        margin-bottom: 15px; }
+      .main-form .text_footnote {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px; }
+    .main-form .button {
+      width: 161px;
+      height: 56px;
+      font-family: 'Roboto-Medium';
+      font-size: 15px;
+      line-height: 22px; }
+
+.button {
+  background-color: #ff9d00;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  font-family: 'Roboto-Regular';
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .button:focus {
+    outline: none; }
+  .button:hover {
+    cursor: pointer; }
+  .button-style_call {
+    width: 179px;
+    height: 45px;
+    font-family: 'Roboto-Medium';
+    font-size: 14px;
+    line-height: 22px; }
+    .button-style_call_text {
+      margin-left: 7px; }
+
+.input-style {
+  border-radius: 5px;
+  border: none;
+  opacity: 0.7;
+  color: #373737;
+  font-family: 'Roboto-Light';
+  font-size: 14px;
+  line-height: 42px;
+  opacity: 1; }
+  .input-style:focus {
+    outline: none; }
