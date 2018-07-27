@@ -37,6 +37,9 @@
 * {
   margin: 0; }
 
+input:focus {
+  outline: none; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 968px; } }
@@ -169,10 +172,11 @@
     .button-style_call_text {
       margin-left: 7px; }
 
-.input-style {
+input {
   border-radius: 5px;
-  border: none;
-  opacity: 0.7;
+  border: none; }
+
+.input-style {
   color: #373737;
   font-family: 'Roboto-Light';
   font-size: 14px;
@@ -180,3 +184,82 @@
   opacity: 1; }
   .input-style:focus {
     outline: none; }
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .overlay .popup {
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    width: 752px;
+    transform: translateX(-50%);
+    background-color: #ffffff; }
+    .overlay .popup-close {
+      position: absolute;
+      font-size: 35px;
+      color: #ffffff;
+      right: -17px;
+      top: -28px; }
+      .overlay .popup-close:hover {
+        cursor: pointer; }
+    .overlay .popup-title {
+      display: block;
+      width: 100%;
+      min-height: 71px;
+      margin: 0;
+      background-color: #ff9d00;
+      text-transform: uppercase;
+      line-height: 71px;
+      font-family: 'Roboto-Regular';
+      font-size: 21px;
+      text-align: center;
+      color: #ffffff; }
+    .overlay .popup-form {
+      background: url(../img/popup/bgpopup.png) center no-repeat;
+      background-size: cover;
+      padding: 35px 88px 50px 88px;
+      color: #ffffff; }
+      .overlay .popup-form_header {
+        padding: 0;
+        font-family: 'Roboto-regular';
+        font-size: 30px;
+        line-height: 27px;
+        text-align: center; }
+        .overlay .popup-form_header span {
+          font-size: 22px; }
+      .overlay .popup-form_label {
+        display: block;
+        font-family: 'Roboto-Light';
+        margin-top: 23px;
+        font-size: 20px;
+        line-height: 30px; }
+      .overlay .popup-form_input {
+        width: 365px;
+        height: 56px;
+        margin-top: 17px;
+        margin-right: 16px;
+        opacity: 0.7;
+        color: #373737;
+        font-family: 'Roboto-Light';
+        font-size: 14px;
+        line-height: 42px;
+        padding-left: 18px; }
+      .overlay .popup-form_btn {
+        width: 180px;
+        height: 56px;
+        font-family: 'Roboto-Medium';
+        font-size: 15px;
+        line-height: 22px;
+        background-color: #ff9d00;
+        display: inline-block; }
+      .overlay .popup-form_note {
+        font-family: 'Roboto-Light';
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 9px; }

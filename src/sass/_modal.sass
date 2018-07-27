@@ -1,0 +1,80 @@
+.overlay
+	position: fixed
+	display: none
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 3
+	background-color: rgba(0, 0, 0, 0.5)
+	.popup
+		position: fixed
+		left: 50%
+		top: 100px
+		width: 752px
+		transform: translateX(-50%)
+		background-color: $white
+		&-close
+			position: absolute
+			font-size: 35px
+			color: $white
+			right: -17px
+			top: -28px
+			&:hover
+				cursor: pointer
+		&-title
+			display: block
+			width: 100%
+			min-height: 71px
+			margin: 0
+			background-color: $yellow
+			text-transform: uppercase
+			line-height: 71px
+			font-family: 'Roboto-Regular'
+			font-size: 21px
+			text-align: center
+			color: $white
+		&-form
+			background: url(../img/popup/bgpopup.png) center no-repeat
+			background-size: cover
+			padding: 35px 88px 50px 88px
+			color: $white
+			
+			&_header
+				padding: 0
+				font-family: 'Roboto-regular'
+				font-size: 30px
+				line-height: 27px
+				text-align: center
+				span
+					font-size: 22px
+			&_label
+				display: block
+				font-family: 'Roboto-Light'
+				margin-top: 23px
+				font-size: 20px
+				line-height: 30px
+			&_input
+				width: 365px
+				height: 56px
+				margin-top: 17px
+				margin-right: 16px
+				opacity: 0.7
+				color: $grey
+				font-family: 'Roboto-Light'
+				font-size: 14px
+				line-height: 42px
+				padding-left: 18px
+			&_btn
+				width: 180px
+				height: 56px
+				font-family: 'Roboto-Medium'
+				font-size: 15px
+				line-height: 22px
+				background-color: $yellow
+				display: inline-block
+			&_note
+				font-family: 'Roboto-Light'
+				font-size: 14px
+				line-height: 30px
+				margin-top: 9px
+
