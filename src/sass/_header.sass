@@ -1,8 +1,21 @@
 .header
 	padding-bottom: 11px
-	padding-top: 59px
-	.button
-		margin-left: 10px
+	padding-top: 15px
+	&-icons
+		display: flex
+		justify-content: space-around
+		align-items: center
+	&_menu
+		display: none
+	&_logo
+		background: url(../img/header-logo.png) 0 no-repeat
+		width: 191px
+		height: 61px
+		background-size: 100%
+	&_button
+			
+	&_phones
+		text-align: end
 	&_phone
 		color: $grey
 		font-family: 'Roboto-Medium'
@@ -10,8 +23,11 @@
 		line-height: 29px
 		text-transform: uppercase
 		min-height: 29px
-		padding-left: 15px
-		padding-right: 15px
+		padding-left: 10px
+		padding-right: 10px
+		letter-spacing: 0.012em
+		display: inline-block
+	
 		&-link
 			color: $grey
 			text-decoration: none

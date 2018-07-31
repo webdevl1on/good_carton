@@ -2,8 +2,8 @@
 	position: relative
 	background: #373737 url('../img/main/bgi-main.jpg') center  no-repeat 
 	background-size: cover
-	padding-top: 65px
-	padding-bottom: 60px
+	padding-top: 66px
+	padding-bottom: 75px
 	color: $white
 	z-index: 2
 	&::before 
@@ -18,6 +18,7 @@
 		background-color: rgba(0, 0, 0, 0.65)
 	&-text
 		&_title
+			margin-top: 3px
 			font-family: 'Roboto-Bold'
 			font-size: 41px
 			line-height: 42px	
@@ -30,35 +31,30 @@
 	&-img
 		float: right
 		position: relative
+		& img
+			max-width: 390px
 		&::before
 			content: ''
 			position: absolute
 			z-index: -1
 			left: 20%
-			top: %
-			width: 390px
-			height: 390px
+			top: 3%
+			width: 310px
+			height: 310px
 			border: 1px solid $white
 			border-radius: 50%
 		&::after
 			content: url(../img/main/rst.png)
 			position: absolute
 			z-index: 4
-			bottom: -1%
-			left: 21%
+			bottom: -2%
+			left: 20%
 	
 	&-form
 		padding: 22px 26px 23px 28px
 		background-color: rgba(255, 255, 255, 0.2)
 		border-radius: 3px
-		/* Сноска */
-		.text_footnote
-			padding-left: 18px
-			padding-top: 6px
-			font-family: 'Roboto-Light'
-			font-size: 14px
-			line-height: 30px
-
+		
 		.form-style
 			display: flex
 			/* Placeholder */
@@ -78,9 +74,12 @@
 				text-transform: uppercase
 				margin-bottom: 15px
 			&_footnote
+				padding-left: 18px
+				padding-top: 6px				
 				font-size: 14px
-				font-weight: 300
-				line-height: 30px
+				font-family: 'Roboto-Light'
+		
+				
 		.button
 			width: 161px
 			height: 56px
